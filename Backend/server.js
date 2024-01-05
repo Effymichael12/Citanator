@@ -7,7 +7,7 @@ const articleRotuer = require('./routes/articleRoutes');
 app.use(express.json())
 // protect the api routes with .env
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'citanator.netlify.app');
+  res.header('Access-Control-Allow-Origin', 'http://10.83.2.63:3000');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.header('Access-Control-Allow-Credentials', true);
