@@ -6,6 +6,13 @@ const citeRouter = require('./routes/citationRoutes');
 const articleRotuer = require('./routes/articleRoutes');
 app.use(express.json())
 // protect the api routes with .env
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://your-frontend-domain');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.header('Access-Control-Allow-Credentials', true);
+  next();
+});
 app.use(process.env.CITEPATH, citeRouter)
 app.use(process.env.ARTICLEPATH, articleRotuer)
 //protect the port with .env as well
