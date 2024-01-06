@@ -5,14 +5,14 @@ const cors = require('cors');
 const citeRouter = require('./routes/citationRoutes');
 const articleRotuer = require('./routes/articleRoutes');
 const app = express();
-const corsOpts = {
-origin:'*',
-  credentials: true,
-  methods: [GET, POST, PATCH, DELETE],
-  allowedHeaders: ['Content-Type'],
-  exposedHeaders: ['Content-Type']
-};
-app.use(cors(corsOpts));
+app.use(cors());
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.header('Access-Control-Allow-Credentials', true);
+  next();
+});
 app.use(express.json())
 // protect the api routes with .env
 app.use(process.env.CITEPATH, citeRouter)
