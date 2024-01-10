@@ -11,8 +11,7 @@ Images:
 ![image](https://github.com/Effymichael12/Citanator/assets/122330837/a48e9ad3-fecf-4bb9-8fc5-d58db3f8e512)
 ![image](https://github.com/Effymichael12/Citanator/assets/122330837/38e1ebfc-738d-4849-869b-203215fd65a6)
 
-
-
+#replicating Instructions
 
 
 
