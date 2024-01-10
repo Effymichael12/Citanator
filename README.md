@@ -11,7 +11,22 @@ Images:
 ![image](https://github.com/Effymichael12/Citanator/assets/122330837/a48e9ad3-fecf-4bb9-8fc5-d58db3f8e512)
 ![image](https://github.com/Effymichael12/Citanator/assets/122330837/38e1ebfc-738d-4849-869b-203215fd65a6)
 
-# Replicating Instructions
+# Custamizing project
+If you desire to make some changes to the project and add your own part to it, please feel free to. 
+Ensure that you have the following requirements:
+1. Node.js
+2. React.js
+3. Visual Studio Code - IDE
+4. Rapid api account - subscribe to API: https://rapidapi.com/pk-ai-pk-ai-default/api/ai-content-detector-gpt3-4-bard-and-llama-2-detector/
+
+Setting up the project:
+Download the citanator files first from Github. 
+Go into the backend folder, open your terminal and install the dependencies:
+npm init -y 
+
+
+
+
 
 
 
