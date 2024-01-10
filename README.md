@@ -36,7 +36,7 @@ Working with the frontend:
 create an .env file in the root of the react folder and you will need to replace a few rotues. You will need to proxy the backend to the frotend here and get your own API key for the AI detection API. 
 if you are running on localhost your code proxy should look something like this: http://localhost:PORTNUMBER/
 To create this proxy go into your package.json and at the very top(above the name), create a proxy like this:  "proxy":"https://localhost:PORT/"
-If your frontend is already running ensure that you restart it so that it can connect to the backend. 
+If your frontend is already running ensure that you restart it so that it can connect to the backend. <break />
 You will need to repalce teh following .env keys:
 REACT_APP_CITEROTUE = THE ROUTE YOU CREATED IN THE BACKEND
 REACT_APP_UPDATEROUTE = THE ROUTE YOU CREATED IN THE BACKEND
