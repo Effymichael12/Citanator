@@ -22,7 +22,8 @@ Ensure that you have the following requirements:
 Setting up the project:
 Download the citanator files first from Github. 
 Go into the backend folder, open your terminal and install the dependencies:
-npm init -y 
+<img width="109" alt="image" src="https://github.com/Effymichael12/Citanator/assets/122330837/d064da9c-b36b-48cd-9954-8fa9e880adc6">
+
 
 
 
