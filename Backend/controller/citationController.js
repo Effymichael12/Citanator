@@ -75,8 +75,15 @@ module.exports.getCitation = async(req,res) =>{
   // create an array to store errors
       const errors = [];
   // create an error if you can't find certain elements
-    if (!citationInfo.publishedDate || citationInfo.publishedDate === "" || citationInfo.publishedDate === undefined ) {
+    if (!citationInfo.publishedDate) {
       errors.push('Could not find published date');
+    }
+    if(citationInfo.publishedDate === "undefined NaN NaN"){
+      errors.push('Could not find published date');
+
+    }
+    if(citationInfo.publishedDate === undefined){
+      errors.push('Could not find published date')
     }
 // error if you can't find author
     if (!citationInfo.author) {
